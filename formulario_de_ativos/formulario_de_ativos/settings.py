@@ -14,8 +14,14 @@ SECRET_KEY = 'django-insecure-^$!m+!v_(4_lfotps&7lp+^6b0vyagb+-ze5_pel*)#3pvdibl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io',
+    'localhost',
+    '127.0.0.1'
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io'
+]
 
 # Application definition
 
@@ -44,7 +50,8 @@ ROOT_URLCONF = 'formulario_de_ativos.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'solicitacoes/templates/solicitacoes/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -108,7 +115,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILE_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, 'static')
 ]
 
 # Default primary key field type
