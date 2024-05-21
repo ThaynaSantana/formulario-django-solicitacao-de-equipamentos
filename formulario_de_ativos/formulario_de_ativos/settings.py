@@ -14,14 +14,9 @@ SECRET_KEY = 'django-insecure-^$!m+!v_(4_lfotps&7lp+^6b0vyagb+-ze5_pel*)#3pvdibl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io',
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io'
-]
+CSRF_TRUSTED_ORIGINS = ['https://8000-thaynasanta-formulariod-g6mdmndqsl8.ws-us114.gitpod.io']
 
 # Application definition
 

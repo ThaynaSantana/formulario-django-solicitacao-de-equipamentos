@@ -6,7 +6,7 @@ from openpyxl.utils import get_column_letter
 # Create your views here.
 
 def save_to_excel(data):
-    file_path = 'https://1drv.ms/x/c/e9d0690692d5011e/EZ8sT9-3lUhOlqfbGYasImUB7W7MEYS19uvHi9beJduj6Q?e=L1fdJQ'
+    file_path = './xlsx/SOLICITACOS_DE_ATIVOS.xlsx'
 
     try:
         workbook = openpyxl.load_workbook(file_path)
