@@ -56,7 +56,7 @@ class Solicitacao_Ativo(forms.Form):
     ) # Char (porque é apenas usuario)
 
     gestor_direto = CharField(
-        label='Diretor',
+        label='Gestor Direto',
         max_length=100,
         widget=forms.TextInput(attrs={'class': 'form-control'})
     ) # Char
