@@ -1,4 +1,3 @@
-from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from gestaoAtivos.handle_excel import inserir_dados_solicitacao
 from gestaoAtivos.forms import Solicitacao_Ativo
