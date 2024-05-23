@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso no Envio de Solicitação</title>
+    <link rel="icon" href="{% static 'png/laptop_checked.png' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img" style="height: 15rem; width: 18rem; margin: 2rem 0 2rem 2rem" src="https://cdn-icons-png.flaticon.com/512/5158/5158443.png">
+                    <h5 class="card-title">Sua solicitação de equipamento foi enviada com sucesso!</h5>
+                    <p class="card-text">Envie um e-mail ao suporte.</p>
+                    <button onclick="enviarEmail()" class="btn btn-success btn-block">Envie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/envio_email.js' %}"></script>
+</body>
+</html>

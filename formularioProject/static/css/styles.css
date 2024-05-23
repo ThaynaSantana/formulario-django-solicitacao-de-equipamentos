@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-curva-azul_53876-113112.jpg?t=st=1716472600~exp=1716476200~hmac=9e0a01c12b410d47e7f5defa8eb8d9b28cc8eafff17d4fc86dea090cbd3eb6ad&w=996');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background: rgba(50, 178, 255, 0.55);
+}
+
+ input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
