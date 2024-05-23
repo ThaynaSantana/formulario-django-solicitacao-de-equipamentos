@@ -11,14 +11,6 @@ def listar_ativos_disponiveis():
     ativos_disponiveis = df[df['STATUS'] == 'DISPONIVEL']['COD PATRIMONIAL'].tolist()
     return ativos_disponiveis
 
-
-# Testando
-ativos_disponiveis = listar_ativos_disponiveis()
-ativos_tuplas = [(ativo, ativo) for ativo in ativos_disponiveis]
-CODIGO_ATIVO_CHOICES = tuple(ativos_tuplas)
-print(CODIGO_ATIVO_CHOICES)
-
-
 def inserir_dados_solicitacao(dados_formulario):
     # Carrega a planilha existente
     planilha = "planilhas/SOLICITAÇÕES.xlsx"

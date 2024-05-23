@@ -20,7 +20,6 @@ from django.urls import path
 from gestaoAtivos import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('sucesso/', views.sucesso, name="sucesso")
 ]
