@@ -53,7 +53,7 @@ class Solicitacao_Ativo(forms.Form):
     ) # Char
 
     criacao_email = CharField(
-        label='Email',
+        label='Usuário para Email',
         max_length=100,
         required=True,
         widget=forms.TextInput(attrs={'class': 'form-control','placeholder': 'Insira para criação de email (nome.sobrenome), exemplo: joao.silva'}),
